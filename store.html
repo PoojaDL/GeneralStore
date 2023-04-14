@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>General Store</title>
+
+  <!-- Bootstrap link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <style media="screen">
+    .center-div {
+      height: 40%;
+      width: 40%;
+      position: relative;
+      left: 30%;
+    }
+
+    body {
+      background: rgba(76, 175, 80, 0.3)
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <h1 align="center" class="display-3">Pooja General Store</h1>
+
+  <div class="center-div">
+    <form class="" action="index.html" method="post">
+      <label for="">Item</label>
+      <input type="text" class="item form-control mb-2" name="item" value="">
+      <label for="">Description</label>
+      <input type="text" class="description form-control mb-2" name="description" value="">
+      <label for="">Price</label>
+      <input type="text" class="price form-control mb-2" name="price" value="">
+      <label for="">Quantity</label>
+      <input type="text" class="quantity form-control mb-2" name="quantity" value="">
+      <button class="btn-lg btn-success my-5" type="button" onclick="myfunction(event)" name="button">Add</button>
+
+<hr>
+      <ul class="listOfItems">
+
+      </ul>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="store.js" charset="utf-8"></script>
+  </form>
+</body>
+
+</html>
